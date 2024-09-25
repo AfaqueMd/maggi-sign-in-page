@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans";
+    background-color: #fcfcfc;
+    height: 2000px;
+}
+
+.side-nav{
+    width: 7.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: fixed;
+    top:0;
+}
+.side-nav div~div{
+    padding: 25px 5px 5px 6px;
+}
+.logo img{
+    width: 100%;
+    padding: 35px 0 30px 25%;
+}
+.logo{
+    background-image: url(./images/download.png);
+    height: 130px;
+    margin-bottom: 30px;
+}
+.side-nav-menu{
+    margin: auto;
+}
+.side-nav-menu img{
+    width: 30px;
+    opacity: 0.4;
+}
+.side-nav-menu:nth-child(3) img{
+    width: 20px;
+}
+.side-nav-menu:nth-child(6) img{
+    opacity: 1;
+}
+.side-nav-menu :hover{
+    opacity: 1
+}
+
+main{
+    display: flex;
+    margin-left:200px;
+    margin-top: 95px;
+    border: 1px solid blue;
+}
+
+main div h1{
+    font-size: 52px;
+    color: #39323b;
+    margin-bottom: 0;
+}
+main div h2{
+    margin-top: 0;
+    color: #39323b;
+    font-size: 42px;
+}
+
+.left{
+    width: 50%;
+    padding: 20px;
+}
+.left input{
+    display: block;
+    width: 60%;
+    padding: 25px;
+    font-size: 18px;
+    border: 3px solid rgb(226, 223, 223);
+    margin-bottom: 30px;
+}
+.sign-in div{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    justify-content:left;
+    margin: 20px;
+}
+.sign-in div img{
+    width: 33px;
+}
+.sign-in p{
+    background-color: #3464a2;
+    width: 30%;
+    border: 1px solid rgb(226, 226, 226);
+    padding: 6px;
+    color: white;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.sign-in div{
+    margin: 50px 0px;
+}
+.sign-in div+div p{
+    background-color: #ffffff;
+    color: black;
+}
+.right{
+    width: 50%;
+}
+
+.right img{
+    width: 70px;
+}
+.right{
+    margin-top: 95px;
+}
+.right h1{
+    font-size: 46px;
+}
+
+.right>h1+div p{
+    background-color: #333333;
+    width: 70%;
+    padding: 28px;
+    margin-top: 8%;
+    margin-bottom: 15%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.right>h1+div p span{
+    color: #f8e946;
+    padding: 0 10px;
+    position: relative;
+    top: 3px;
+    font-size: 19px;
+    
+}
+.right h2{
+    font-size: 28px;
+    
+}
+
+.right div p{
+    font-size: 18px;
+}
+
+.right h1+div p:hover{
+    background-color: #fff01a;
+    color: black;
+}
+
+.right h2 ~ div{
+    display: flex;
+    width: 62%;
+}
+.right h2~div p{
+    margin-left: 30px;
+    letter-spacing: 1px;
+}
